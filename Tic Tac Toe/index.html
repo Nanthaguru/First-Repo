@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner" id="ban">TIC TAC TOE</div>
+        <div class="score-display">
+            <span>X: <span id="x-score">0</span></span>
+            <span>O: <span id="o-score">0</span></span>
+        </div>
+        <div class="innercontainer">
+            <div class="upper">
+                <button id="s1" onclick="check('b1')" class="btns"></button>
+                <button id="s2" onclick="check('b2')" class="btns"></button>
+                <button id="s3" onclick="check('b3')" class="btns"></button>
+            </div>
+            <di class="middle">
+                <button id="s4" onclick="check('b4')" class="btns"></button>
+                <button id="s5" onclick="check('b5')" class="btns"></button>
+                <button id="s6" onclick="check('b6')" class="btns"></button>
+            </di>
+            <div class="lower">
+                <button id="s7" onclick="check('b7')" class="btns"></button>
+                <button id="s8" onclick="check('b8')" class="btns"></button>
+                <button id="s9" onclick="check('b9')" class="btns"></button>
+            </div>
+        </div>
+        <div class="reset" onclick="resetGame()">
+            <button id="reset">New Game</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
